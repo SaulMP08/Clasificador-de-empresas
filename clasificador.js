@@ -24,6 +24,6 @@ function clasificar() {
         "Empresa: " + nombre + "<br>" +
         "Cantidad de colaboradores: " + colaboradores + "<br>" +
         "Origen del capital: " + capital + "<br>" +
-        "Finalidad: " + finalidad + "<br>" +
+        "Finalidad: " + fines_lucro + "<br>" +
         "Categoría: " + categoria;
 }
