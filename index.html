@@ -3,31 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="clasificador.js"></script>
     <title>Clasificador de Empresas</title>
 </head>
 <body>
     <form class="formulario">
         <div class="input-group">
-            <input type="text" placeholder="Nombre">
+            <input type="text"  id="nombre" placeholder="Nombre">
         </div>
     
         <div class="input-group">
-            <input type="text" placeholder="Cantidad de colaboradores">
+            <input type="number" id="colaboradores" placeholder="Cantidad de colaboradores">
         </div>
     
-        <div class="input-group">
-            <input type="text" placeholder="Origen de la empresa">
-        </div>
-    
-        <div class="input-group">
-            <input type="text" placeholder="Origen de la inversión">
-        </div>
+        <label>Origen del capital:</label>
+        <select id="capital">
+            <option value="publico">Público</option>
+            <option value="privado">Privado</option>
+            <option value="mixto">Mixto</option>
+        </select>
 
-        <div class="input-group">
-            <input type="text" placeholder="Con o sin fines de lucro">
-        </div>
+
+        <label>Con o sin fines de lucro:</label>
+        <select id="fines_lucro">
+            <option value="con">Con fines de lucro</option>
+            <option value="sin">Sin fines de lucro</option>
+        </select>
     
-        <button type="submit">Enviar</button>
+        <button type="button" onclick="clasificar()">
+            Clasificar empresa
+        </button>
     </form>
+    
+    <h2>Resultado de la clasificación</h2>
+    <div id="resultado"></div>
 </body>
 </html>
