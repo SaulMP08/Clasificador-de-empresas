@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="style.css">
     <script src="clasificador.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Idiqlat:wght@200;300;400&family=Londrina+Solid:wght@100;300;400;900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+
 
     <title>Clasificador de Empresas</title>
 </head>
@@ -29,8 +36,6 @@
             <option value="mixto">Mixto</option>
         </select>
 
-        <br><br>
-
         <label>Con o sin fines de lucro:</label>
 
         <select id="fines_lucro">
@@ -38,17 +43,15 @@
             <option value="sin">Sin fines de lucro</option>
         </select>
 
-        <br><br>
-
         <button type="button" onclick="clasificar()">
             Clasificar empresa
         </button>
 
+        <div id="resultado">
+            <h2>Resultado de la clasificación</h2>
+        </div>
     </form>
 
-    <h2>Resultado de la clasificación</h2>
-
-    <div id="resultado"></div>
-
 </body>
+
 </html>
